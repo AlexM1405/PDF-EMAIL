@@ -1,33 +1,26 @@
-Technical Test: Python/Node
-Objective:
-The objective of this technical test is to assess the candidate's proficiency in Python or Node.js and their ability to develop a RESTful API that works with automation libraries
-Requirements:
-Develop a RESTful API using Node or Python
-The API should include the following functionalities:
-Receive a PDF file.
-Extract the first 30 lines of the PDF.
-Send an email with the extracted content to the provided email address.
-Instructions:
-The candidate can choose between Node and Python.
-Include a README.md file with instructions for installing dependencies, running the project, and any other relevant details.
-The project should be uploaded to a public GitHub repository.
-Delivery time is 3 working days.
-Example Endpoint:
-Request (Node.js or Python):
-http
-POST /upload
-Content-Type: multipart/form-data
 
-{
-    "file": <pdf-file>,
-    "email": "example@example.com"
-}
+CODE-CHALLENGE PDF-to-Email 
+
+instructions
+git clone https://github.com/AlexM1405/PDF-EMAIL.git
+
+Install the required Python packages:
+pip install -r requirements.txt
 
 
-​
-Expected Response:
-{
-    "success": true,
-    "message": "The email has been successfully sent to example@example.com"
-}
+START THE APLICATION
+python app.py
+
+Access the application in your web browser at http://localhost:5000.
+TO SEND A EMIAL THIS URL
+https://www.postman.com/
+HTTP POST http://localhost:5000/upload
+
+In the request body section below the URL input field
+select the "form-data" option.
+Enter file in the key field and choose "file" from the dropdown menu on the right.
+Click on the "Select Files" button that appears and choose a PDF file from your computer to upload.
+then add your email.
+the key have to "file" and "email"
+
 
