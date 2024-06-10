@@ -23,4 +23,6 @@ Click on the "Select Files" button that appears and choose a PDF file from your 
 then add your email.
 the key have to "file" and "email"
 
+NOTE: THE PDF FILE HAVE TO ONLY HAVE TEXT TO WORK 
+
 
